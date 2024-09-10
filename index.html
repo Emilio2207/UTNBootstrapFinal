@@ -3,252 +3,445 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitio Web Viaja Ahora</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/a7bcbeb65d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
-    <title>Document</title>
+    <!-- Bootstrap Link -->
+
+    <!-- Font Awesome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Font Awesome Cdn -->
   </head>
   <body>
-    <div class="header">
-      <div class="container-fluid gx-0">
-        <!-- Navbar inicio -->
-
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <a class="navbar-brand logo text-uppercase" href="#">emi&vico</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Headphones</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="btn-navbar" href="#">Buy Now</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-        <!-- Navbar final -->
-
-        <div class="container">
-          <div class="content-home">
-            <div class="row content-home2">
-              <div class="col-lg-7 col-md-5">
-                <div class="box-container">
-                  <img
-                    src="/img/headphone.png"
-                    class="img-home"
-                    alt="banner img"
-                  />
-                </div>
-              </div>
-              <div class="col-lg-5 col-md-7">
-                <div class="box-container2">
-                  <h1 class="home-heading">
-                    Designed For Your
-                    <span class="home-span">Quality Music</span>
-                  </h1>
-                  <p class="para-home">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptas.
-                  </p>
-                  <div class="btn-home">
-                    <a href="#" class="home-links">Buy Now</a>
-                    <a href="#" class="home-links btn-2">Explore</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Navbar inicio -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" id="logo"
+          ><span>V</span>iaja <span>A</span>hora</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book">Reserva</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Paquetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallary">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Acerca de</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Buscar" />
+            <button class="btn btn-primary" type="button">Buscar</button>
+          </form>
         </div>
       </div>
-    </div>
+    </nav>
+    <!-- Navbar fin -->
 
-    <!-- Header Parte terminada -->
-
-    <!-- About Us Parte Inicial -->
-
-    <div class="container">
-      <div class="about-us-container">
-        <div class="about-us">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="content-about">
-                <h3 class="heading-about">Sobre nosotros</h3>
-                <p class="para-about">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Velit corrupti illum libero, quo praesentium possimus
-                  voluptatum! Deserunt laboriosam beatae voluptatibus?
-                </p>
-                <p class="para-about">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  repellendus illo labore perferendis fuga. Voluptatem,
-                  voluptatum?
-                </p>
-                <a href="#" class="link-about">
-                  <span class="span-about"></span> Leer más
-                  <span class="icon-arrow"
-                    ><i class="fa-solid fa-arrow-right"></i></span
-                ></a>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <img src="/img/headphone2.png" alt="img" class="img-about" />
-            </div>
-          </div>
-        </div>
+    <!-- Seccion Inicio - Inicio -->
+    <div class="home">
+      <div class="content">
+        <h5>Bienvenido al mundo</h5>
+        <h1>Visita <span class="changecontent"></span></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, nisi.</p>
+        <a href="#book">Reservar Lugar</a>
       </div>
     </div>
+    <!-- Home Section End -->
 
-    <!-- About Us Parte Finalizada -->
+    <!-- Seccion Reserva - Inicio -->
+    <section class="book" id="book">
+      <div class="container">
+        <div class="main-text">
+          <h1><span>R</span>eserva</h1>
+        </div>
 
-    <section class="product-category">
-      <h2 class="heading-product">Categoría de productos</h2>
-      <div class="container-fluid">
-        <!-- slider carousel bootstrap-->
-
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6">
-                    <div class="card card-product">
-                      <img
-                        src="/img//headphone3.png"
-                        class="card-img-top img-card"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">EAR PHONES UNO</h5>
-                        <p class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Corrupti magnam mollitia at. Odio minima
-                          doloribus aut eius?
-                        </p>
-                        <a href="#" class="btn-product-ctg"
-                          >Leer más
-                          <span class="icon-arrow"
-                            ><i class="fa-solid fa-arrow-right"></i></span
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6">
-                    <div class="card card-product">
-                      <img
-                        src="/img//headphone3.png"
-                        class="card-img-top img-card"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">EAR PHONES DOS</h5>
-                        <p class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Corrupti magnam mollitia at. Odio minima
-                          doloribus aut eius?
-                        </p>
-                        <a href="#" class="btn-product-ctg"
-                          >Leer más
-                          <span class="icon-arrow"
-                            ><i class="fa-solid fa-arrow-right"></i></span
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6">
-                    <div class="card card-product">
-                      <img
-                        src="/img//headphone3.png"
-                        class="card-img-top img-card"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">EAR PHONES TRES</h5>
-                        <p class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Corrupti magnam mollitia at. Odio minima
-                          doloribus aut eius?
-                        </p>
-                        <a href="#" class="btn-product-ctg"
-                          >Leer más
-                          <span class="icon-arrow"
-                            ><i class="fa-solid fa-arrow-right"></i></span
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="row">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/book-img.png" alt="" />
             </div>
-            <div class="carousel-item"></div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <form action="#">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Adonde"
+                required
+              /><br />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Cuantos"
+                required
+              /><br />
+              <input
+                type="date"
+                class="form-control"
+                placeholder="Llegada"
+                required
+              /><br />
+              <input
+                type="date"
+                class="form-control"
+                placeholder="Partida"
+                required
+              /><br />
+              <textarea
+                class="form-control"
+                rows="5"
+                name="text"
+                placeholder="Ingrese su nombre y detalles"
+              ></textarea>
+              <input type="submit" value="Reserva ahora" class="submit" required />
+            </form>
+          </div>
         </div>
       </div>
     </section>
+    <!-- Seccion Reserva - final -->
+
+    <!-- Seccion Paquetes - Inicio -->
+    <section class="packages" id="packages">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>P</span>aquetes</h1>
+        </div>
+
+        <div class="row row-custom-30">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/uk.png" alt="" />
+              <div class="card-body">
+                <h3>Reino Unido</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Precio: <strong>$500</strong></h6>
+                <a href="#book">Reserva ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/france.png" alt="" />
+              <div class="card-body">
+                <h3>Francia</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Precio: <strong>$500</strong></h6>
+                <a href="#book">Reserva ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/pakistan.png" alt="" />
+              <div class="card-body">
+                <h3>Pakistan</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Precio: <strong>$500</strong></h6>
+                <a href="#book">Reserva ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-custom-30">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/italy.png" alt="" />
+              <div class="card-body">
+                <h3>Italia</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Precio: <strong>$500</strong></h6>
+                <a href="#book">Reserva ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/india.png" alt="" />
+              <div class="card-body">
+                <h3>India</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Precio: <strong>$500</strong></h6>
+                <a href="#book">Reserva ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/us.png" alt="" />
+              <div class="card-body">
+                <h3>Estados Unidos</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Precio: <strong>$500</strong></h6>
+                <a href="#book">Reserva ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion Paquetes - Final -->
+
+    <!-- Seccion Servicios - Inicio -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>S</span>ervicios</h1>
+        </div>
+
+        <div class="row row-custom-30">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                <h3>Hotel Accesible</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-utensils"></i>
+              <div class="card-body">
+                <h3>Comidas & Bebidas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <h3>Guía de seguridad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-custom-30">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                <h3>Alrededor del Mundo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                <h3>Viaje más Rápido</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-hiking"></i>
+              <div class="card-body">
+                <h3>Aventuras</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion Servicios - Final -->
+
+    <!-- Seccion Galeria - Inicial -->
+    <section class="gallary" id="gallary">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>G</span>aleria</h1>
+        </div>
+
+        <div class="row row-custom-30">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g1.png" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g2.png" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g3.png" alt="" height="230px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-custom-30">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g4.png" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g5.png" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g6.png" alt="" height="230px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion Galeria - Final -->
+
+    <!-- Acerca de - Inicial -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="main-txt">
+          <h1>Acerca <span>De</span></h1>
+        </div>
+
+        <div class="row row-custom-50">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/about-img.png" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>Cómo funciona la agencia de viajes</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              perferendis dolorem, numquam earum at nam beatae voluptate natus consectetur
+              facere, saepe cupiditate ut exercitationem deserunt, facilis quam
+              perspiciatis autem iure illo harum minima. Quas, vitae aperiam laudantium
+              alias asperiores nulla rerum, nihil eveniet perferendis sint illum accusamus
+              officiis aliquam nam.
+            </p>
+            <button id="about-btn">Leer más...</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Acerca de - Final -->
+
+    <!-- Footer - Inicio -->
+    <footer id="footer">
+      <h1><span>V</span>iaja <span>A</span>hora</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa
+        quos nulla qui alias.
+      </p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Diseñado por <a href="#">emi&vico</a></p>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright emi&vico. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <!-- Archivo script -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"
-  ></script>
 </html>
